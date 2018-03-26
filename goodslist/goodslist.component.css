@@ -8,13 +8,13 @@ ul, li{
 }
 
 li{
-    width: 40%;
+    width: 25%;
     max-width: 200px;
     height: 350px;
-    font-size: 18px;
+    font-size: 15px;
     float: left;
-    margin: 5%;
-    background: rgb(25, 214, 34);
+    margin: 7%;
+    background:pink;
 }
 
 .goodsimg {
@@ -29,7 +29,7 @@ img {
 
 p {
     width: 95%;
-    margin-top: 5px;
+    margin-top: 10px;
     padding-left: 5%;
 }
 
