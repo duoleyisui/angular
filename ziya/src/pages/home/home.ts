@@ -12,21 +12,6 @@ export class HomePage {
   }
   
   change = "message";
-  list1 = {
-    span1: "资产包转让",
-    span2: "FB001",
-    img: "assets/images/a1.png",
-    info1: "地区",
-    info11: "北京",
-    info2: "来源",
-    info21: "银行",
-    info3: "资产包类型",
-    info31: "抵押",
-    mes1: "500万",
-    mes11: "总金额",
-    mes2: "300万",
-    mes21: "转让价"
-  }
   
   items=[];
   doInfinite(infiniteScroll) {
