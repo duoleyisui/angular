@@ -66,18 +66,62 @@
           <span>尽职调查</span>
         </li>
       </ul>
-      <blank></blank>
       <div class="goodinfo">
         <img src="assets/images/good.png"><span>优质信息</span>
       </div>
       <br>
-      <list [config]="list1"></list>
-      <br>
-      <list [config]="list1"></list>
-      <br>
-      <list [config]="list1"></list>
-      <br>
-      <list [config]="list1"></list>
+      <ion-list style=" position:relative;top:35px; ">
+        <p>
+            <img src="../assets/images/good.png" height="20px"/><span style="font-size:20px;">优质信息</span>
+        </p>
+          <ion-item>
+            <ion-thumbnail item-start>
+              <img src="../assets/images/a2.png">
+            </ion-thumbnail>
+            <p>地区：<span style="color:black;">北京</span></p>
+            <p>来源：<span style="color:black;">银行</span></p>
+            <p>资产包类型：<span style="color:black;">抵押</span></p>
+            <p style="position:absolute;top:15px; left:220px;"><span style="font-size:25px;color:red;">500万</span><br/>总金额</p>
+            <img src="../assets/images/link.png" item-end/>
+          </ion-item>
+       
+          <ion-item>
+            <ion-thumbnail item-start>
+              <img src="../assets/images/a2.png">
+            </ion-thumbnail>
+            <p>地区：<span style="color:black;">北京</span></p>
+            <p>来源：<span style="color:black;">银行</span></p>
+            <p>资产包类型：<span style="color:black;">抵押</span></p>
+            <p style="position:absolute;top:15px; left:220px;"><span style="font-size:25px;color:red;">500万</span><br/>总金额</p>
+            <img src="../assets/images/link.png" item-end/>
+          </ion-item>
+    
+          <ion-item>
+            <ion-thumbnail item-start>
+              <img src="../assets/images/a2.png">
+            </ion-thumbnail>
+            <p>地区：<span style="color:black;">北京</span></p>
+            <p>来源：<span style="color:black;">银行</span></p>
+            <p>资产包类型：<span style="color:black;">抵押</span></p>
+            <p style="position:absolute;top:15px; left:220px;"><span style="font-size:25px;color:red;">500万</span><br/>总金额</p>
+            <img src="../assets/images/link.png" item-end/>
+          </ion-item>
+    
+          <ion-item>
+            <ion-thumbnail item-start>
+              <img src="../assets/images/a2.png">
+            </ion-thumbnail>
+            <p>地区：<span style="color:black;">北京</span></p>
+            <p>来源：<span style="color:black;">银行</span></p>
+            <p>资产包类型：<span style="color:black;">抵押</span></p>
+            <p style="position:absolute;top:15px; left:220px;"><span style="font-size:25px;color:red;">500万</span><br/>总金额</p>
+            <img src="../assets/images/link.png" item-end/>
+          </ion-item>
+          <ion-infinite-scroll (ionInfinite)="doInfinite($event)" immediate-check="false">
+            <ion-infinite-scroll-content loadingSpinner="bubbles"
+            loadingText="Loading more data..."></ion-infinite-scroll-content>
+          </ion-infinite-scroll>  
+      </ion-list> 
     </div>
     <div *ngSwitchCase="'serve'">
       <ul class="list">
@@ -122,26 +166,63 @@
           <span>尽职调查</span>
         </li>
       </ul>
-      <blank></blank>
       <div class="goodinfo">
         <img src="assets/images/good.png"><span>优质服务</span>
       </div>
       <br>
-      <list [config]="list2"></list>
-      <br>
-      <list [config]="list2"></list>
-      <br>
-      <list [config]="list2"></list>
-      <br>
-      <list [config]="list2"></list>
+      <ion-list style=" position:relative;top:35px; ">
+        <p>
+            <img src="../assets/images/good.png" height="20px"/><span style="font-size:20px;">优质信息</span>
+        </p>
+          <ion-item>
+            <ion-thumbnail item-start>
+              <img src="../assets/images/a2.png">
+            </ion-thumbnail>
+            <p>地区：<span style="color:black;">北京</span></p>
+            <p>来源：<span style="color:black;">银行</span></p>
+            <p>资产包类型：<span style="color:black;">抵押</span></p>
+            <p style="position:absolute;top:15px; left:220px;"><span style="font-size:25px;color:red;">500万</span><br/>总金额</p>
+            <img src="../assets/images/link.png" item-end/>
+          </ion-item>
+       
+          <ion-item>
+            <ion-thumbnail item-start>
+              <img src="../assets/images/a2.png">
+            </ion-thumbnail>
+            <p>地区：<span style="color:black;">北京</span></p>
+            <p>来源：<span style="color:black;">银行</span></p>
+            <p>资产包类型：<span style="color:black;">抵押</span></p>
+            <p style="position:absolute;top:15px; left:220px;"><span style="font-size:25px;color:red;">500万</span><br/>总金额</p>
+            <img src="../assets/images/link.png" item-end/>
+          </ion-item>
+    
+          <ion-item>
+            <ion-thumbnail item-start>
+              <img src="../assets/images/a2.png">
+            </ion-thumbnail>
+            <p>地区：<span style="color:black;">北京</span></p>
+            <p>来源：<span style="color:black;">银行</span></p>
+            <p>资产包类型：<span style="color:black;">抵押</span></p>
+            <p style="position:absolute;top:15px; left:220px;"><span style="font-size:25px;color:red;">500万</span><br/>总金额</p>
+            <img src="../assets/images/link.png" item-end/>
+          </ion-item>
+    
+          <ion-item>
+            <ion-thumbnail item-start>
+              <img src="../assets/images/a2.png">
+            </ion-thumbnail>
+            <p>地区：<span style="color:black;">北京</span></p>
+            <p>来源：<span style="color:black;">银行</span></p>
+            <p>资产包类型：<span style="color:black;">抵押</span></p>
+            <p style="position:absolute;top:15px; left:220px;"><span style="font-size:25px;color:red;">500万</span><br/>总金额</p>
+            <img src="../assets/images/link.png" item-end/>
+          </ion-item>
+          <ion-infinite-scroll (ionInfinite)="doInfinite($event)" immediate-check="false">
+            <ion-infinite-scroll-content loadingSpinner="bubbles"
+            loadingText="Loading more data..."></ion-infinite-scroll-content>
+          </ion-infinite-scroll>  
+      </ion-list> 
     </div>
   </div>
   <br/>
-  <ion-infinite-scroll>
-      <ion-infinite-scroll-content loadingSpinner="ios" loadingText="loading...">
-        <h1>asdfasdfdsa</h1>
-        <h1>asdfasdfdsa</h1>
-        <h1>asdfasdfdsa</h1>
-      </ion-infinite-scroll-content>
-  </ion-infinite-scroll>
 </ion-content>

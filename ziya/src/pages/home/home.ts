@@ -28,19 +28,17 @@ export class HomePage {
     mes21: "转让价"
   }
   
-  list2 = {
-    span1: "催收机构",
-    span2: "PV1001",
-    img: "assets/images/a2.png",
-    info1: "地区",
-    info11: "北京",
-    info2: "状态",
-    info21: "以诉讼",
-    info3: "类型",
-    info31: "个人",
-    mes1: "100",
-    mes11: "金额",
-    mes2: "30%",
-    mes21: "佣金比例"
+  items=[];
+  doInfinite(infiniteScroll) {
+
+    setTimeout(() => {
+      for (let i = 0; i < 3; i++) {
+        this.items.push( this.items.length );
+      }
+
+      infiniteScroll.complete();
+      
+      this.items.length=0;
+    }, 666);
   }
 }
