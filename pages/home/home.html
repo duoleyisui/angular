@@ -1,0 +1,228 @@
+<ion-header>
+  <ion-navbar color="yel">
+    
+    <ion-title><img src="../../assets/images/logo.png" alt="资芽" height="36"></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-slides autoplay="1000" loop="true" pager="true" class="slide">
+    <ion-slide>
+      <img src="../../assets/images/banner.png" />
+    </ion-slide>
+    <ion-slide>
+      <img src="../../assets/images/banner.png" />
+    </ion-slide>
+    <ion-slide>
+      <img src="../../assets/images/banner.png" />
+    </ion-slide>
+  </ion-slides>
+
+  <ion-segment [(ngModel)]="change" color="yel">
+    <ion-segment-button value="message">找信息</ion-segment-button>
+    <ion-segment-button value="serve">找服务</ion-segment-button>
+  </ion-segment>
+  <div [ngSwitch]="change">
+    <div *ngSwitchCase="'message'">
+      <ul class="list">
+        <li class="list_item item_left">
+          <img src="assets/images/ion1.png" width="33" height="35">
+          <br>
+          <span>资产包转让</span>
+        </li>
+        <li class="list_item">
+          <img src="assets/images/ion2.png" width="35" height="35">
+          <br>
+          <span>债权转让</span>
+        </li>
+        <li class="list_item">
+          <img src="assets/images/ion3.png" width="35" height="35">
+          <br>
+          <span>估产转让</span>
+        </li>
+        <li class="list_item item_right">
+          <img src="assets/images/ion4.png" width="35" height="35">
+          <br>
+          <span>商业保理</span>
+        </li>
+        <li class="list_item item_left">
+          <img src="assets/images/ion5.png" width="30" height="35">
+          <br>
+          <span>典当担保</span>
+        </li>
+        <li class="list_item">
+          <img src="assets/images/ion6.png" width="43" height="35">
+          <br>
+          <span>融资借贷</span>
+        </li>
+        <li class="list_item">
+          <img src="assets/images/ion7.png" width="38" height="35">
+          <br>
+          <span>悬赏信息</span>
+        </li>
+        <li class="list_item item_right">
+          <img src="assets/images/ion8.png" width="35" height="35">
+          <br>
+          <span>尽职调查</span>
+        </li>
+      </ul>
+      <div class="goodinfo">
+        <img src="assets/images/good.png"><span>优质信息</span>
+      </div>
+      <br>
+      <ion-list style=" position:relative;top:35px; ">
+        <p>
+            <img src="../assets/images/good.png" height="20px"/><span style="font-size:20px;">优质信息</span>
+        </p>
+          <ion-item>
+            <ion-thumbnail item-start>
+              <img src="../assets/images/a2.png">
+            </ion-thumbnail>
+            <p>地区：<span style="color:black;">北京</span></p>
+            <p>来源：<span style="color:black;">银行</span></p>
+            <p>资产包类型：<span style="color:black;">抵押</span></p>
+            <p style="position:absolute;top:15px; left:220px;"><span style="font-size:25px;color:red;">500万</span><br/>总金额</p>
+            <img src="../assets/images/link.png" item-end/>
+          </ion-item>
+       
+          <ion-item>
+            <ion-thumbnail item-start>
+              <img src="../assets/images/a2.png">
+            </ion-thumbnail>
+            <p>地区：<span style="color:black;">北京</span></p>
+            <p>来源：<span style="color:black;">银行</span></p>
+            <p>资产包类型：<span style="color:black;">抵押</span></p>
+            <p style="position:absolute;top:15px; left:220px;"><span style="font-size:25px;color:red;">500万</span><br/>总金额</p>
+            <img src="../assets/images/link.png" item-end/>
+          </ion-item>
+    
+          <ion-item>
+            <ion-thumbnail item-start>
+              <img src="../assets/images/a2.png">
+            </ion-thumbnail>
+            <p>地区：<span style="color:black;">北京</span></p>
+            <p>来源：<span style="color:black;">银行</span></p>
+            <p>资产包类型：<span style="color:black;">抵押</span></p>
+            <p style="position:absolute;top:15px; left:220px;"><span style="font-size:25px;color:red;">500万</span><br/>总金额</p>
+            <img src="../assets/images/link.png" item-end/>
+          </ion-item>
+    
+          <ion-item>
+            <ion-thumbnail item-start>
+              <img src="../assets/images/a2.png">
+            </ion-thumbnail>
+            <p>地区：<span style="color:black;">北京</span></p>
+            <p>来源：<span style="color:black;">银行</span></p>
+            <p>资产包类型：<span style="color:black;">抵押</span></p>
+            <p style="position:absolute;top:15px; left:220px;"><span style="font-size:25px;color:red;">500万</span><br/>总金额</p>
+            <img src="../assets/images/link.png" item-end/>
+          </ion-item>
+          <ion-infinite-scroll (ionInfinite)="doInfinite($event)" immediate-check="false">
+            <ion-infinite-scroll-content loadingSpinner="bubbles"
+            loadingText="Loading more data..."></ion-infinite-scroll-content>
+          </ion-infinite-scroll>  
+      </ion-list> 
+    </div>
+    <div *ngSwitchCase="'serve'">
+      <ul class="list">
+        <li class="list_item item_left">
+          <img src="assets/images/i1.png" width="33" height="35">
+          <br>
+          <span>资产包收购</span>
+        </li>
+        <li class="list_item">
+          <img src="assets/images/i2.png" width="35" height="35">
+          <br>
+          <span>催收机构</span>
+        </li>
+        <li class="list_item">
+          <img src="assets/images/i3.png" width="35" height="35">
+          <br>
+          <span>律师事务所</span>
+        </li>
+        <li class="list_item item_right">
+          <img src="assets/images/i4.png" width="35" height="35">
+          <br>
+          <span>保理公司</span>
+        </li>
+        <li class="list_item item_left">
+          <img src="assets/images/i5.png" width="30" height="35">
+          <br>
+          <span>资金过桥</span>
+        </li>
+        <li class="list_item">
+          <img src="assets/images/ion6.png" width="43" height="35">
+          <br>
+          <span>投资贷款</span>
+        </li>
+        <li class="list_item">
+          <img src="assets/images/i7.png" width="38" height="35">
+          <br>
+          <span>固产收购</span>
+        </li>
+        <li class="list_item item_right">
+          <img src="assets/images/ion8.png" width="35" height="35">
+          <br>
+          <span>尽职调查</span>
+        </li>
+      </ul>
+      <div class="goodinfo">
+        <img src="assets/images/good.png"><span>优质服务</span>
+      </div>
+      <br>
+      <ion-list style=" position:relative;top:35px; ">
+        <p>
+            <img src="../assets/images/good.png" height="20px"/><span style="font-size:20px;">优质信息</span>
+        </p>
+          <ion-item>
+            <ion-thumbnail item-start>
+              <img src="../assets/images/a2.png">
+            </ion-thumbnail>
+            <p>地区：<span style="color:black;">北京</span></p>
+            <p>来源：<span style="color:black;">银行</span></p>
+            <p>资产包类型：<span style="color:black;">抵押</span></p>
+            <p style="position:absolute;top:15px; left:220px;"><span style="font-size:25px;color:red;">500万</span><br/>总金额</p>
+            <img src="../assets/images/link.png" item-end/>
+          </ion-item>
+       
+          <ion-item>
+            <ion-thumbnail item-start>
+              <img src="../assets/images/a2.png">
+            </ion-thumbnail>
+            <p>地区：<span style="color:black;">北京</span></p>
+            <p>来源：<span style="color:black;">银行</span></p>
+            <p>资产包类型：<span style="color:black;">抵押</span></p>
+            <p style="position:absolute;top:15px; left:220px;"><span style="font-size:25px;color:red;">500万</span><br/>总金额</p>
+            <img src="../assets/images/link.png" item-end/>
+          </ion-item>
+    
+          <ion-item>
+            <ion-thumbnail item-start>
+              <img src="../assets/images/a2.png">
+            </ion-thumbnail>
+            <p>地区：<span style="color:black;">北京</span></p>
+            <p>来源：<span style="color:black;">银行</span></p>
+            <p>资产包类型：<span style="color:black;">抵押</span></p>
+            <p style="position:absolute;top:15px; left:220px;"><span style="font-size:25px;color:red;">500万</span><br/>总金额</p>
+            <img src="../assets/images/link.png" item-end/>
+          </ion-item>
+    
+          <ion-item>
+            <ion-thumbnail item-start>
+              <img src="../assets/images/a2.png">
+            </ion-thumbnail>
+            <p>地区：<span style="color:black;">北京</span></p>
+            <p>来源：<span style="color:black;">银行</span></p>
+            <p>资产包类型：<span style="color:black;">抵押</span></p>
+            <p style="position:absolute;top:15px; left:220px;"><span style="font-size:25px;color:red;">500万</span><br/>总金额</p>
+            <img src="../assets/images/link.png" item-end/>
+          </ion-item>
+          <ion-infinite-scroll (ionInfinite)="doInfinite($event)" immediate-check="false">
+            <ion-infinite-scroll-content loadingSpinner="bubbles"
+            loadingText="Loading more data..."></ion-infinite-scroll-content>
+          </ion-infinite-scroll>  
+      </ion-list> 
+    </div>
+  </div>
+  <br/>
+</ion-content>
